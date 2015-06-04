@@ -1,0 +1,17 @@
+{application, fedex,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  exmpp
+                 ]},
+  {mod, { fedex_app, []}},
+  {env, [{accounts, [
+    {"fedex-user@example.com", "xmpp.example.com", "password1"},
+    {"fedex-user@another.example.com", "xmpp.another.example.com", "password2"}
+                    ]}]}
+ ]}.

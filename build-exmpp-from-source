@@ -1,0 +1,11 @@
+- name: Install dependencies and build Exmpp
+  hosts: all
+  tasks:
+    - name: install dependencies
+      apt: name=git,erlang,libssl-dev,zlib1g-dev,autotools-dev,libtool,erlang-jiffy update_cache=yes
+
+    - name: clone exmpp repository
+      git: dest=/root/exmpp repo=https://github.com/processone/exmpp
+
+    - name: configure and compile
+      shell: cd /root/exmpp && autoreconf -vif && ./configure && make install
