@@ -1,0 +1,50 @@
+{
+
+
+
+
+
+
+    "creator": "Alex Weber <alexwebr@gmail.com>", 
+
+
+
+
+
+
+    "reporter": "Alex Weber <alexwebr@gmail.com>", 
+
+
+
+
+
+
+    "severity": "minor", 
+
+
+
+
+
+
+    "status": "open", 
+
+
+
+
+
+
+    "summary": "Show config paramters in log, like httpd port", 
+
+
+
+
+
+
+    "time": "Wed, 10 Jun 2015 02:20:35 +0000"
+
+
+
+
+
+
+}

@@ -1,0 +1,1 @@
+We probably want to do this with a gen_fsm? Not sure if we want to integrate it with the watchdog_server or not, probably makes sense to do it that way though.
