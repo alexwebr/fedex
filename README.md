@@ -22,7 +22,7 @@ Using
 
 1. First, you need accounts on the XMPP domains you want to monitor.
 1. Then, edit `src/fedex.app.src` and add those accounts (JID, hostname, password).
-1. Finally, build and run with: `erl -make && ./start.sh && tail -f fedex.log`
+1. Finally, build and run with: `rebar compile && ./start.sh && tail -f fedex.log`
 1. Browse to http://hostname:8099/index.html
 1. That's it!
 
