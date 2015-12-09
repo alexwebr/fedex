@@ -25,7 +25,7 @@ start_link() ->
 init([]) ->
     Children = [
       ?CHILD(watchdog_server, worker),
-      ?CHILD(xmpp_sup, worker)
+      ?CHILD(xmpp_sup, supervisor)
     ],
     {ok, { {one_for_one, 0, 2}, Children }}.
 
